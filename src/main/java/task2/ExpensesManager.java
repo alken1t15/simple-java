@@ -11,9 +11,8 @@ public class ExpensesManager {
     public double saveExpense(Scanner scanner, double moneyBeforeSalary) {
 
         // Печать вопросов и считывание ответов оставьте в классе Practice
-        System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
         int day = scanner.nextInt();
-        System.out.println("Введите размер траты:");
+        System.out.print("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?\nВведите размер траты:");
         double expense = scanner.nextDouble();
         moneyBeforeSalary = moneyBeforeSalary - expense;
         expenses[day - 1] = expenses[day - 1] + expense;
